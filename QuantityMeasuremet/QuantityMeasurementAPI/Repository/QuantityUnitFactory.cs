@@ -21,6 +21,14 @@ namespace Repository
                 return new Inch(valueToConvert);
             else if (type.Equals("Yard"))
                 return new Yard(valueToConvert);
+            else if (type.Equals("Fahrenhiet"))
+                return new Inch(valueToConvert);
+            else if (type.Equals("Celcius"))
+                return new Yard(valueToConvert);
+            else if (type.Equals("KiloGrams"))
+                return new Inch(valueToConvert);
+            else if (type.Equals("Grams"))
+                return new Yard(valueToConvert);
             return null;
         }
     }
