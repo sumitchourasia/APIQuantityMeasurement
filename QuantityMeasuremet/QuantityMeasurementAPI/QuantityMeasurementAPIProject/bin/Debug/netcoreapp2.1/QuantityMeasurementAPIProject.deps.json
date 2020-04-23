@@ -29,7 +29,7 @@
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10",
-          "Model": "1.0.0",
+          "QuantityUnits": "1.0.0",
           "Repository": "1.0.0",
           "Swashbuckle.AspNetCore.Swagger": "4.0.1",
           "Swashbuckle.AspNetCore.SwaggerGen": "4.0.1",
@@ -400,7 +400,7 @@
       },
       "Manager/1.0.0": {
         "dependencies": {
-          "Model": "1.0.0",
+          "QuantityUnits": "1.0.0",
           "Repository": "1.0.0"
         },
         "runtime": {
@@ -410,17 +410,17 @@
           "Manager.dll": {}
         }
       },
-      "Model/1.0.0": {
+      "QuantityUnits/1.0.0": {
         "runtime": {
-          "Model.dll": {}
+          "QuantityUnits.dll": {}
         },
         "compile": {
-          "Model.dll": {}
+          "QuantityUnits.dll": {}
         }
       },
       "Repository/1.0.0": {
         "dependencies": {
-          "Model": "1.0.0"
+          "QuantityUnits": "1.0.0"
         },
         "runtime": {
           "Repository.dll": {}
@@ -3717,7 +3717,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Model/1.0.0": {
+    "QuantityUnits/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

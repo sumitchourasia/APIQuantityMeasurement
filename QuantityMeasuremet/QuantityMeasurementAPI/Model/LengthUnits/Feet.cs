@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Model.LengthModel
+namespace QuantityUnits.LengthUnits
 {
     public class Feet
     {

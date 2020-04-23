@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Model.LengthModel;
-using Model;
+﻿using QuantityUnits;
+using QuantityUnits.LengthUnits;
+using QuantityUnits.TemperatureUnits;
+using QuantityUnits.WeightUnits;
+using QuantityUnits.WeightUnits;
 
 namespace Repository
 {
@@ -22,13 +22,13 @@ namespace Repository
             else if (type.Equals("Yard"))
                 return new Yard(valueToConvert);
             else if (type.Equals("Fahrenhiet"))
-                return new Inch(valueToConvert);
+                return new Fahrenhiet(valueToConvert);
             else if (type.Equals("Celcius"))
-                return new Yard(valueToConvert);
+                return new Celcius(valueToConvert);
             else if (type.Equals("KiloGrams"))
-                return new Inch(valueToConvert);
+                return new KiloGrams(valueToConvert);
             else if (type.Equals("Grams"))
-                return new Yard(valueToConvert);
+                return new Grams(valueToConvert);
             return null;
         }
     }

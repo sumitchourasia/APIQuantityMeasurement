@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Manager;
-using Model;
+using QuantityUnits;
 using Microsoft.Extensions.Logging;
 
 namespace QuantityMeasurementAPIProject.Controllers
@@ -38,29 +38,5 @@ namespace QuantityMeasurementAPIProject.Controllers
 
             return this.Ok(employee);
         }
-
-       /* // GET api/values/5
-        [Route("Convert")]
-        [HttpGet]
-        public double Get(Data data)
-        {
-            double convertedValue = this._manager.Convert(data);
-            return convertedValue;
-            //return this.Ok(convertedValue);
-        }
-*/
-        /*/// <summary>
-        /// GET api/values/5
-        /// </summary>
-        /// <param name="id">id.</param>
-        /// <returns>async Task.<IActionResult></returns>
-        [Route("Convert")]
-        [HttpGet("{data}")]
-        public ActionResult<string> Get(Data data)
-        {
-            // logger.LogInformation("Get Employee based on id"); 
-            double convertedValue = this._manager.Convert(data);
-            return this.Ok(convertedValue);
-        }*/
     }
 }

@@ -4663,7 +4663,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Model": "1.0.0",
+          "QuantityUnits": "1.0.0",
           "Repository": "1.0.0"
         },
         "compile": {
@@ -4673,21 +4673,21 @@
           "bin/placeholder/Manager.dll": {}
         }
       },
-      "Model/1.0.0": {
+      "QuantityUnits/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "compile": {
-          "bin/placeholder/Model.dll": {}
+          "bin/placeholder/QuantityUnits.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Model.dll": {}
+          "bin/placeholder/QuantityUnits.dll": {}
         }
       },
       "Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Model": "1.0.0"
+          "QuantityUnits": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Repository.dll": {}
@@ -12734,10 +12734,10 @@
       "path": "../Manager/Manager.csproj",
       "msbuildProject": "../Manager/Manager.csproj"
     },
-    "Model/1.0.0": {
+    "QuantityUnits/1.0.0": {
       "type": "project",
-      "path": "../Model/Model.csproj",
-      "msbuildProject": "../Model/Model.csproj"
+      "path": "../Model/QuantityUnits.csproj",
+      "msbuildProject": "../Model/QuantityUnits.csproj"
     },
     "Repository/1.0.0": {
       "type": "project",
@@ -12752,7 +12752,7 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
-      "Model >= 1.0.0",
+      "QuantityUnits >= 1.0.0",
       "Repository >= 1.0.0",
       "Swashbuckle.AspNetCore.Swagger >= 4.0.1",
       "Swashbuckle.AspNetCore.SwaggerGen >= 4.0.1",
@@ -12792,8 +12792,8 @@
             "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Manager\\Manager.csproj": {
               "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Manager\\Manager.csproj"
             },
-            "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\Model.csproj"
+            "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj": {
+              "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj"
             },
             "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Repository\\Repository.csproj": {
               "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Repository\\Repository.csproj"

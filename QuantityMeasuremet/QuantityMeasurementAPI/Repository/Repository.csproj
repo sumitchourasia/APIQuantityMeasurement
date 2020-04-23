@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Model\Model.csproj" />
+    <ProjectReference Include="..\Model\QuantityUnits.csproj" />
   </ItemGroup>
 
 </Project>

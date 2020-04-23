@@ -208,14 +208,14 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Model/1.0.0": {
+      "QuantityUnits/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "compile": {
-          "bin/placeholder/Model.dll": {}
+          "bin/placeholder/QuantityUnits.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Model.dll": {}
+          "bin/placeholder/QuantityUnits.dll": {}
         }
       }
     }
@@ -692,16 +692,16 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Model/1.0.0": {
+    "QuantityUnits/1.0.0": {
       "type": "project",
-      "path": "../Model/Model.csproj",
-      "msbuildProject": "../Model/Model.csproj"
+      "path": "../Model/QuantityUnits.csproj",
+      "msbuildProject": "../Model/QuantityUnits.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
-      "Model >= 1.0.0"
+      "QuantityUnits >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -734,8 +734,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\Model.csproj"
+            "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj": {
+              "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj"
             }
           }
         }

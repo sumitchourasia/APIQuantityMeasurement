@@ -8,15 +8,15 @@
     ".NETCoreApp,Version=v2.1": {
       "Repository/1.0.0": {
         "dependencies": {
-          "Model": "1.0.0"
+          "QuantityUnits": "1.0.0"
         },
         "runtime": {
           "Repository.dll": {}
         }
       },
-      "Model/1.0.0": {
+      "QuantityUnits/1.0.0": {
         "runtime": {
-          "Model.dll": {}
+          "QuantityUnits.dll": {}
         }
       }
     }
@@ -27,7 +27,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Model/1.0.0": {
+    "QuantityUnits/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

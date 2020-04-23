@@ -1,9 +1,8 @@
-﻿using Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using Repository;
-using Model.LengthModel;
+using QuantityUnits;
 
 namespace Manager
 {
@@ -20,5 +19,6 @@ namespace Manager
         {
             return this._Repository.Convert(data);
         }
+
     }
 }

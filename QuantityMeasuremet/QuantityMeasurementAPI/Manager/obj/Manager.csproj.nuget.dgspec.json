@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\Model.csproj"
+              "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj": {
+                "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj"
               },
               "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Repository\\Repository.csproj": {
                 "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Repository\\Repository.csproj"
@@ -69,12 +69,12 @@
         }
       }
     },
-    "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\Model.csproj": {
+    "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\Model.csproj",
-        "projectName": "Model",
-        "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj",
+        "projectName": "QuantityUnits",
+        "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj",
         "packagesPath": "C:\\Users\\stsum\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\obj\\",
         "projectStyle": "PackageReference",
@@ -153,8 +153,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\Model.csproj"
+              "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj": {
+                "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj"
               }
             }
           }

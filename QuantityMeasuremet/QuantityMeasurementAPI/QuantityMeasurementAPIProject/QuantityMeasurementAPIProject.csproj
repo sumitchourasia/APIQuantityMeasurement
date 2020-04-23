@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Manager\Manager.csproj" />
-    <ProjectReference Include="..\Model\Model.csproj" />
+    <ProjectReference Include="..\Model\QuantityUnits.csproj" />
     <ProjectReference Include="..\Repository\Repository.csproj" />
   </ItemGroup>
 

@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantityMeasurementAPIProject", "QuantityMeasurementAPIProject.csproj", "{0A601511-A357-4938-A6AE-A6D96BC86CA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager", "..\Manager\Manager.csproj", "{7887C92F-173D-4B4A-8354-DE800A0BFEB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manager", "..\Manager\Manager.csproj", "{7887C92F-173D-4B4A-8354-DE800A0BFEB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "..\Model\Model.csproj", "{0F3F7F7A-FD3A-4847-A065-4A96ABFE930F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantityUnits", "..\Model\QuantityUnits.csproj", "{0F3F7F7A-FD3A-4847-A065-4A96ABFE930F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "..\Repository\Repository.csproj", "{5C3515BB-6D76-49C0-8F1F-5F7F113D88FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "..\Repository\Repository.csproj", "{5C3515BB-6D76-49C0-8F1F-5F7F113D88FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

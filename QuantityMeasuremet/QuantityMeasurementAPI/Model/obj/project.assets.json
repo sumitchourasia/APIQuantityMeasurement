@@ -695,9 +695,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\Model.csproj",
-      "projectName": "Model",
-      "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj",
+      "projectName": "QuantityUnits",
+      "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj",
       "packagesPath": "C:\\Users\\stsum\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\obj\\",
       "projectStyle": "PackageReference",
