@@ -4,8 +4,23 @@ using System.Text;
 
 namespace Model
 {
-    class KiloGrams
+    public class KiloGrams
     {
-        double kg = 0;
+        double kilogram = 0.0;
+
+        public KiloGrams(double kilogram)
+        {
+            this.kilogram = kilogram;
+        }
+
+        public double Convert(KiloGrams kilogramsObject)
+        {
+            return this.kilogram;
+        }
+
+        public double Convert(Grams gramsObject)
+        {
+            return this.kilogram * 1000;
+        }
     }
 }
