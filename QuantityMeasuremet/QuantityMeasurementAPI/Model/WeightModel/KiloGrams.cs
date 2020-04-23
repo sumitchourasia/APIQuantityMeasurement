@@ -6,5 +6,6 @@ namespace Model
 {
     class KiloGrams
     {
+        double kg = 0;
     }
 }

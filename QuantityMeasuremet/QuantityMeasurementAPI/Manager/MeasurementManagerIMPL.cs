@@ -1,27 +1,24 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Text;
-
+using Repository;
+using Model.LengthModel;
 
 namespace Manager
 {
-    public class MeasurementManagerIMPL
+    public class MeasurementManagerIMPL : IMeasurementManager
     {
-        private readonly IRepository lengthRepository;
+        private readonly IRepository _Repository;
 
-        public MeasurementManagerIMPL(IRepository lengthRepository)
+        public MeasurementManagerIMPL( IRepository repository )
         {
-            this.lengthRepository = lengthRepository;
+            this._Repository = repository;
         }
 
-        public double FeetToInche(double feet)
+        public double Convert(Data data)
         {
-            return lengthRepository.FeetToInche(feet);
-        }
-
-        public double IncheToFeet(double inch)
-        {
-            return lengthRepository.IncheToFeet(inch);
+            return this._Repository.Convert(data);
         }
     }
 }

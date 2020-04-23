@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Model;
 
 namespace Repository
 {
-    interface IRepository
+    public interface IRepository
     {
-        double FeetToInche(double feet);
-
-        double IncheToFeet(double inch);
+        double Convert(Data data);
     }
 }

@@ -1,20 +1,21 @@
-﻿using System;
+﻿using Model;
+using Model.LengthModel;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Repository
 {
-    class RepositoryIMPL
+    public class RepositoryIMPL : IRepository
     {
-        public double FeetToInche(double Feet)
+        double IRepository.Convert(Data data)
         {
-            Feet.
-            return Feet * 12.0;
-        }
-
-        public double IncheToFeet(double inch)
-        {
-            return inch / 12;
+            dynamic UnitToConvert = QuantityUnitFactory.CreateQuantityUnitObject(data.inputtype, data.valuetoconvert);
+            dynamic UnitConvertTo = QuantityUnitFactory.CreateQuantityUnitObject(data.outputtype);
+           /* Feet UnitToConvert = (Feet)QuantityUnitFactory.CreateQuantityUnitObject(data.inputtype, data.valuetoconvert);
+            Inch UnitConvertTo = (Inch)QuantityUnitFactory.CreateQuantityUnitObject(data.outputtype);
+           */ 
+            return UnitToConvert.Convert(UnitConvertTo); 
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,9 +7,6 @@ namespace Manager
 {
     public interface IMeasurementManager
     {
-        double FeetToInche(double feet);
-
-        double IncheToFeet(double inch);
-
+        double Convert(Data data);
     }
 }
