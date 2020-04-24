@@ -1,11 +1,12 @@
 import axios from 'axios';
 
-export async function InchToFeet(length) {
-    var headers = {
-        'accept': 'application/json'
-    }
+export default async function Convert(data) {
     try {
-        return axios.get('https://localhost:5001/api/Length/api/InchToFeet?inch='+length, { headers: headers })
+        var headers = {
+            accept: 'application/json',
+            // Content-Type: 'application/json-patch+json';
+        }
+        return await axios.post('https://localhost:44310/api/Measurement/Convert',data ,{ headers: headers })
             .then(response => {
                 console.log(response)
                 return response
@@ -17,19 +18,3 @@ export async function InchToFeet(length) {
     }
 }
 
-export async function FeetToInch(length) {
-    var headers = {
-        'accept': 'application/json'
-    }
-    try {
-        return axios.get('https://localhost:5001/api/Length/api/FeetToInch?feet='+length, { headers: headers })
-            .then(response => {
-                console.log(response)
-                return response
-            })
-    }
-    catch (error) {
-        console.log("error while converting feet to Inch" + error)
-        return Promise.resolve(false)
-    }
-}
