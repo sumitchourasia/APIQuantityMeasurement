@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Manager;
 using QuantityUnits;
 using Microsoft.Extensions.Logging;
+using Experimental.System.Messaging;
 
 namespace QuantityMeasurementAPIProject.Controllers
 {
@@ -15,6 +16,8 @@ namespace QuantityMeasurementAPIProject.Controllers
     public class MeasurementController : ControllerBase
     {
         private readonly IMeasurementManager _manager;
+
+        Sender senderQueue = new Sender();
 
         public MeasurementController(IMeasurementManager manager)
         {
@@ -31,12 +34,14 @@ namespace QuantityMeasurementAPIProject.Controllers
         public async Task<IActionResult> GetConvertor(Data data)
         {
            // Logger.LogInformation("Get Employee based on id");
-            double employee = this._manager.Convert(data);
+            double convertedData = this._manager.Convert(data);
 
-            if (employee == 0)
-                return this.NotFound("Employee record Not Found");
-
-            return this.Ok(employee);
+            if (convertedData >= 0)
+            {
+                senderQueue.SendMessage(data.valuetoconvert+data.inputtype+"="+convertedData+data.outputtype);
+                return this.Ok(convertedData);
+            }
+            return this.NotFound("Employee record Not Found");
         }
     }
 }

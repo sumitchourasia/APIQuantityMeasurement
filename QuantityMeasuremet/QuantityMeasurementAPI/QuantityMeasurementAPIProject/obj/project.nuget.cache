@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BJ6CR1cppWSaR8EofaUFbWvqVrBA8Ndr9M6uGruBd+VkvuSq1i17enR0Gob0p2RUcHkG6ZIdN4xUVVytgf0BcQ==",
+  "dgSpecHash": "65zbWSc3kwghsoROXIYJhAd7tVtj3UY/jQRvrCK1p3njWee80YwxWcn4JsJwMPQD0NeYspvNuRkWs27DZoOW7g==",
   "success": true,
   "projectFilePath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\QuantityMeasurementAPIProject\\QuantityMeasurementAPIProject.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\stsum\\.nuget\\packages\\experimental.system.messaging\\1.1.0\\experimental.system.messaging.1.1.0.nupkg.sha512",
     "C:\\Users\\stsum\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\stsum\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
     "C:\\Users\\stsum\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.1.1\\microsoft.aspnetcore.antiforgery.2.1.1.nupkg.sha512",
