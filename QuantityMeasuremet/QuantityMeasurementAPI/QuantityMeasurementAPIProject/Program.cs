@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using QuantityMeasurementAPIProject.MSMQService;
 
 namespace QuantityMeasurementAPIProject
 {
@@ -14,6 +15,8 @@ namespace QuantityMeasurementAPIProject
     {
         public static void Main(string[] args)
         {
+            Receiver receiver = new Receiver();
+            receiver.ReceiveData();
             CreateWebHostBuilder(args).Build().Run();
         }
 

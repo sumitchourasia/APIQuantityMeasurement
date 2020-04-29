@@ -11,9 +11,7 @@ namespace Repository
         {
             dynamic UnitToConvert = QuantityUnitFactory.CreateQuantityUnitObject(data.inputtype, data.valuetoconvert);
             dynamic UnitConvertTo = QuantityUnitFactory.CreateQuantityUnitObject(data.outputtype);
-           /* Feet UnitToConvert = (Feet)QuantityUnitFactory.CreateQuantityUnitObject(data.inputtype, data.valuetoconvert);
-            Inch UnitConvertTo = (Inch)QuantityUnitFactory.CreateQuantityUnitObject(data.outputtype);
-           */ 
+          
             return UnitToConvert.Convert(UnitConvertTo); 
         }
     }
