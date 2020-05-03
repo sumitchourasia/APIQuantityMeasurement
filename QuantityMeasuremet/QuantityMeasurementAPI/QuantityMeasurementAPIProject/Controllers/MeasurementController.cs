@@ -9,6 +9,8 @@ using QuantityUnits;
 using Microsoft.Extensions.Logging;
 using Experimental.System.Messaging;
 using QuantityMeasurementAPIProject.MSMQService;
+using QuantityMeasurementAPIProject.RedisServices;
+using Newtonsoft.Json;
 
 namespace QuantityMeasurementAPIProject.Controllers
 {
@@ -17,29 +19,40 @@ namespace QuantityMeasurementAPIProject.Controllers
     public class MeasurementController : ControllerBase
     {
         private readonly IMeasurementManager _manager;
+        private readonly RedisService _redisService;
 
         Sender senderQueue = new Sender();
 
-        public MeasurementController(IMeasurementManager manager)
+        public MeasurementController(IMeasurementManager manager, RedisService redisService)
         {
             this._manager = manager;
+            this._redisService = redisService;
         }
 
         /// <summary>
-        /// GET: api/Employee/5.
+        ///  // POST api/values
         /// </summary>
         /// <param name="id">id.</param>
         /// <returns>async Task.<IActionResult></returns>
         [Route("Convert")]
         [HttpPost]
-        public async Task<IActionResult> GetConvertor(Data data)
+        public async Task<IActionResult> Post(Data data)
         {
-           // Logger.LogInformation("Get Employee based on id");
-            double convertedData = this._manager.Convert(data);
-
+            double convertedData=-1;
+            string key = JsonConvert.SerializeObject(data);
+            var definitely = await _redisService.Get(key);
+            if (definitely == null)
+            {
+                convertedData = this._manager.Convert(data);
+            }
+            else
+            {
+                return this.Ok(definitely);
+            }
             if (convertedData >= 0)
             {
                 senderQueue.SendMessage(data.valuetoconvert+data.inputtype+"="+convertedData+data.outputtype);
+                await _redisService.Set(key, convertedData.ToString());
                 return this.Ok(convertedData);
             }
             return this.NotFound("Employee record Not Found");

@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Repository;
+using QuantityMeasurementAPIProject.RedisServices;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using Swashbuckle.AspNetCore.SwaggerUI;
@@ -47,6 +48,8 @@ namespace QuantityMeasurementAPIProject
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddTransient<IRepository, RepositoryIMPL>();
             services.AddTransient<IMeasurementManager, MeasurementManagerIMPL>();
+            // Add the service as a singleton
+            services.AddSingleton<RedisService>();
 
             ILoggerFactory loggerFactory = new LoggerFactory();
             loggerFactory.AddDebug();
@@ -59,7 +62,7 @@ namespace QuantityMeasurementAPIProject
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, RedisService redisService)
         {
             if (env.IsDevelopment())
             {
@@ -76,6 +79,7 @@ namespace QuantityMeasurementAPIProject
             }
             app.UseCors("AllowAll");
             app.UseHttpsRedirection();
+            redisService.Connect();
             app.UseMvc();
         }
     }
