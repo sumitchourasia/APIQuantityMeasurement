@@ -11,15 +11,33 @@ export default class Home extends Component
             inputUnit:'',
             outputUnit:'',
             valueToConvert:'',
-            convertedValue:''
+            convertedValue:'',
+            quantities : ['length','weight','temperature'],
+            units:['select-unit']
          }; 
     } 
     HandleQuantityChange=(event)=>{
-        console.log(event.target.value)
         var newquantity = event.target.value;
-        this.setState({
-            newquantity:newquantity
-        })
+        if(newquantity == 'length')
+        {     console.log('inside length')
+             this.setState({
+            units:["Feet","Inch","Yard"]
+        }, () => { console.log('callback fxn',this.state.units)  
+        })}
+        if(newquantity == 'weight')
+        {  console.log('inside weight')
+              this.setState({
+            units:["Grams","KiloGrams"]
+        },
+        () => {console.log('callback fxn',this.state.units)
+        })} 
+        if(newquantity == 'temperature')
+        {  console.log('inside temperature')
+            this.setState({
+                units:["Celcius","Fahrenheit"]
+            },
+              () => {console.log('callback fxn',this.state.units)
+        })}
     }
     HandleInputUnitChange=(event)=>{
         console.log(event.target.value)
@@ -42,6 +60,16 @@ export default class Home extends Component
             valueToConvert:valueToConvert
         })
     }
+    handlequantity=(event)=>{
+        console.log(event.target.value)
+        var quantity=event.target.value;
+        this.setState(
+            {
+                value:quantity
+            }
+        )
+    }
+
     onSubmit=(e)=>{
         e.preventDefault();
         console.log(this.state);
@@ -70,35 +98,29 @@ export default class Home extends Component
                 <div className="header-div">Quantity Measurement</div>
                 <div className="main-test-div">
                     <div className="Quantity-div">
-                        <select className='select-div' onChange={this.HandleQuantityChange}>
-                            <option value=''>Select-Quantity</option>
-                            <option value='Length'>Length</option>
-                            <option value='Weight'>Weight</option>
-                            <option value='Temperature'>Temperature</option>
+                        <select className='select-div' onClick={this.HandleQuantityChange}>
+                            {this.state.quantities.map( quantity => (
+                                <option value={quantity}>
+                                    {quantity}
+                                </option>
+                            ))}
                         </select> 
-                    </div> 
+                    </div>  
                     <div className="input-unit">
-                        <select className='input-select' onChange={this.HandleInputUnitChange}> 
-                            <option value=''>Select-Unit</option>
-                            <option value='Feet'>Feet</option> 
-                            <option value='Inch'>Inch</option> 
-                            <option value='Yard'>Yard</option> 
-                            <option value='Celcius'>Celcius</option> 
-                            <option value='Fahrenhiet'>Fahrenhiet</option> 
-                            <option value='KiloGrams'>KiloGrams</option> 
-                            <option value='Grams'>Grams</option> 
+                        <select className='input-select' onClick={this.HandleInputUnitChange} >
+                            {this.state.units.map( unit => (
+                                <option value={unit}>
+                                    {unit}
+                                </option>
+                            ))}
                         </select>
-                        {/* <div className="input-select" >______</div> */}
-                        <select className='input-select' onChange={this.HandleOutputUnitChange}> 
-                            <option value=''>Select-Unit</option>
-                            <option value='Feet'>Feet</option> 
-                            <option value='Inch'>Inch</option> 
-                            <option value='Yard'>Yard</option> 
-                            <option value='Celcius'>Celcius</option>  
-                            <option value='Fahrenhiet'>Fahrenhiet</option>  
-                            <option value='KiloGrams'>KiloGrams</option> 
-                            <option value='Grams'>Grams</option> 
-                        </select> 
+                        <select className='input-select' onClick={this.HandleOutputUnitChange} >
+                            {this.state.units.map( unit => (
+                                   <option value={unit}>
+                                        {unit}
+                                   </option>
+                            ))}
+                        </select>
                     </div> 
                         <div className="inputs-layout-out">
                             <input type="number" className="inner-input-div" placeholder="input value" onChange={this.HandleInputValueChange} />
@@ -111,5 +133,5 @@ export default class Home extends Component
                     </div>
                </div>
         )
-    }//onChange={this.HandleInputUnitChange}
+    }
 }
