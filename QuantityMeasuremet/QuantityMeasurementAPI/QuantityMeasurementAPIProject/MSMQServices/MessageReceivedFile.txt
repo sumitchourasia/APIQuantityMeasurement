@@ -1,1 +1,1 @@
-6Feet=72Inch3Feet=36Inch2Feet=24Inch1Feet=12Inch1Feet=12Inch2Feet=24Inch
+6Feet=72Inch3Feet=36Inch2Feet=24Inch1Feet=12Inch1Feet=12Inch2Feet=24Inch3Feet=36Inch35Celcius=95Fahrenheit30000Grams=30KiloGrams1Feet=12Inch2Feet=24Inch36Celcius=96.8Fahrenheit36.8Celcius=98.24Fahrenheit1Feet=1Feet

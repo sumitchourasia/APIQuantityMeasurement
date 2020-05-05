@@ -208,22 +208,9 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "QuantityUnits/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "compile": {
-          "bin/placeholder/QuantityUnits.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/QuantityUnits.dll": {}
-        }
-      },
       "Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "QuantityUnits": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/Repository.dll": {}
         },
@@ -705,11 +692,6 @@
         "netstandard.library.nuspec"
       ]
     },
-    "QuantityUnits/1.0.0": {
-      "type": "project",
-      "path": "../Model/QuantityUnits.csproj",
-      "msbuildProject": "../Model/QuantityUnits.csproj"
-    },
     "Repository/1.0.0": {
       "type": "project",
       "path": "../Repository/Repository.csproj",
@@ -719,7 +701,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
-      "QuantityUnits >= 1.0.0",
       "Repository >= 1.0.0"
     ]
   },
@@ -753,9 +734,6 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj": {
-              "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Model\\QuantityUnits.csproj"
-            },
             "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Repository\\Repository.csproj": {
               "projectPath": "C:\\Users\\stsum\\OneDrive\\Documents\\VSProjects\\QuantityMeasurementAPIProjectFolder\\QuantityMeasuremet\\QuantityMeasurementAPI\\Repository\\Repository.csproj"
             }

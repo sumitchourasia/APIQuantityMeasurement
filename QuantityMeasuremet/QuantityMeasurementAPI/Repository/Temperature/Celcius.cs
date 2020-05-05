@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace QuantityUnits.TemperatureUnits
+namespace Repository.Temperature
 {
     public class Celcius
     {
@@ -13,9 +13,9 @@ namespace QuantityUnits.TemperatureUnits
             this.celsius = celsius;
         }
 
-        public double Convert(Fahrenhiet fahrenhietObject)
+        public double Convert(Fahrenheit fahrenhietObject)
         {
-            return (this.celsius * 9 / 5) + 32; 
+            return (this.celsius * 9 / 5) + 32;
         }
     }
 }

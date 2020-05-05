@@ -8,22 +8,13 @@
     ".NETCoreApp,Version=v2.1": {
       "Manager/1.0.0": {
         "dependencies": {
-          "QuantityUnits": "1.0.0",
           "Repository": "1.0.0"
         },
         "runtime": {
           "Manager.dll": {}
         }
       },
-      "QuantityUnits/1.0.0": {
-        "runtime": {
-          "QuantityUnits.dll": {}
-        }
-      },
       "Repository/1.0.0": {
-        "dependencies": {
-          "QuantityUnits": "1.0.0"
-        },
         "runtime": {
           "Repository.dll": {}
         }
@@ -32,11 +23,6 @@
   },
   "libraries": {
     "Manager/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "QuantityUnits/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

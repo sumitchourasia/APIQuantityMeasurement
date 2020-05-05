@@ -1,8 +1,6 @@
-﻿using QuantityUnits;
-using QuantityUnits.LengthUnits;
-using QuantityUnits.TemperatureUnits;
-using QuantityUnits.WeightUnits;
-using QuantityUnits.WeightUnits;
+﻿using Repository.Length;
+using Repository.Weight;
+using Repository.Temperature;
 
 namespace Repository
 {
@@ -22,7 +20,7 @@ namespace Repository
             else if (type.Equals("Yard"))
                 return new Yard(valueToConvert);
             else if (type.Equals("Fahrenhiet"))
-                return new Fahrenhiet(valueToConvert);
+                return new Fahrenheit(valueToConvert);
             else if (type.Equals("Celcius"))
                 return new Celcius(valueToConvert);
             else if (type.Equals("KiloGrams"))

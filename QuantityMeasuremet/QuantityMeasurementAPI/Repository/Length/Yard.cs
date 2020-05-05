@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace QuantityUnits.LengthUnits
+namespace Repository.Length
 {
     public class Yard
     {

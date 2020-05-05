@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace QuantityUnits.WeightUnits
+namespace Repository.Weight
 {
     public class Grams
     {
@@ -20,7 +20,8 @@ namespace QuantityUnits.WeightUnits
 
         public double Convert(KiloGrams kilogramsObject)
         {
-            return this.grams/1000;
+            return this.grams / 1000;
         }
     }
 }
+

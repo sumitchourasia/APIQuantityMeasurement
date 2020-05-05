@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantityMeasurementAPIProje
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manager", "..\Manager\Manager.csproj", "{7887C92F-173D-4B4A-8354-DE800A0BFEB3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantityUnits", "..\Model\QuantityUnits.csproj", "{0F3F7F7A-FD3A-4847-A065-4A96ABFE930F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "..\Repository\Repository.csproj", "{5C3515BB-6D76-49C0-8F1F-5F7F113D88FA}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{7887C92F-173D-4B4A-8354-DE800A0BFEB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7887C92F-173D-4B4A-8354-DE800A0BFEB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7887C92F-173D-4B4A-8354-DE800A0BFEB3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0F3F7F7A-FD3A-4847-A065-4A96ABFE930F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F3F7F7A-FD3A-4847-A065-4A96ABFE930F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F3F7F7A-FD3A-4847-A065-4A96ABFE930F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F3F7F7A-FD3A-4847-A065-4A96ABFE930F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5C3515BB-6D76-49C0-8F1F-5F7F113D88FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5C3515BB-6D76-49C0-8F1F-5F7F113D88FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C3515BB-6D76-49C0-8F1F-5F7F113D88FA}.Release|Any CPU.ActiveCfg = Release|Any CPU

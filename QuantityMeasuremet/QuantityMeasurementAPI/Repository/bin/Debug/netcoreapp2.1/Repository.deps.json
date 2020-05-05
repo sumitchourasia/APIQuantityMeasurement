@@ -7,27 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "Repository/1.0.0": {
-        "dependencies": {
-          "QuantityUnits": "1.0.0"
-        },
         "runtime": {
           "Repository.dll": {}
-        }
-      },
-      "QuantityUnits/1.0.0": {
-        "runtime": {
-          "QuantityUnits.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Repository/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "QuantityUnits/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

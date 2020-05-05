@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace QuantityUnits.LengthUnits
+namespace Repository.Length
 {
-   public class Inch 
+    public class Inch
     {
         public double inch = 0.0;
 
@@ -25,7 +25,8 @@ namespace QuantityUnits.LengthUnits
 
         public double Convert(Yard yardObject)
         {
-            return this.inch/36;
+            return this.inch / 36;
         }
     }
 }
+

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace QuantityUnits.TemperatureUnits
+namespace Repository.Temperature
 {
-    public class Fahrenhiet
+    public class Fahrenheit
     {
         double fahrenhiet = 0.0;
 
-        public Fahrenhiet(double fahrenhiet)
+        public Fahrenheit(double fahrenhiet)
         {
             this.fahrenhiet = fahrenhiet;
         }

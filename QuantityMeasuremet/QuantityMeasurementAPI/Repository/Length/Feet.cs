@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace QuantityUnits.LengthUnits
+namespace Repository.Length
 {
     public class Feet
     {
@@ -15,7 +15,7 @@ namespace QuantityUnits.LengthUnits
 
         public double Convert(Feet feetObject)
         {
-            return this.feet ;
+            return this.feet;
         }
 
         public double Convert(Inch inchObject)
@@ -25,7 +25,8 @@ namespace QuantityUnits.LengthUnits
 
         public double Convert(Yard yardObject)
         {
-            return this.feet/3;
+            return this.feet / 3;
         }
     }
 }
+

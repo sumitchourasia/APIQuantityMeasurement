@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace QuantityUnits.WeightUnits
+namespace Repository.Weight
 {
     public class KiloGrams
     {
@@ -24,3 +24,4 @@ namespace QuantityUnits.WeightUnits
         }
     }
 }
+
