@@ -18,20 +18,20 @@ export default class Home extends Component
     } 
     HandleQuantityChange=(event)=>{
         var newquantity = event.target.value;
-        if(newquantity == 'length')
+        if(newquantity === 'length')
         {     console.log('inside length')
              this.setState({
             units:["Feet","Inch","Yard"]
         }, () => { console.log('callback fxn',this.state.units)  
         })}
-        if(newquantity == 'weight')
+        if(newquantity === 'weight')
         {  console.log('inside weight')
               this.setState({
             units:["Grams","KiloGrams"]
         },
         () => {console.log('callback fxn',this.state.units)
         })} 
-        if(newquantity == 'temperature')
+        if(newquantity === 'temperature')
         {  console.log('inside temperature')
             this.setState({
                 units:["Celcius","Fahrenheit"]
